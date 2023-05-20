@@ -1,5 +1,7 @@
 body{
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -15,7 +17,7 @@ h2{
 
 .about-text{
     color: #000;
-    padding: 5%;
+    padding: 5% 5% 0;
     position: relative;
 }
 
@@ -33,15 +35,28 @@ h2{
     border-radius: 22px;
 }
 
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gallery{
+    display: flex;
+    gap: 20px;
+}
+
 .home{
     background-color: #50C878;
     padding: 3% 10% 7%;
     margin-bottom: 5%;
 }
 
-.logo{
-    height: 70px;
-    width: 70px;
+.img-box{
+    max-width: 90vw;
+    margin: auto;
+    padding: 40px 0;
+    width: 100vw;
 }
 
 .navbar{
@@ -50,6 +65,14 @@ h2{
 
 .nav-link{
     font-size: 18px;
+}
+
+.photo img{
+    border-radius: 20px;
+    filter: brightness(80%);
+    height: 80%;
+    object-fit: cover;
+    width: 80%;
 }
 
 .title-img{
