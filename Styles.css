@@ -13,6 +13,7 @@ h1{
 h2{
     color: #50C878;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .about-text{
@@ -67,12 +68,42 @@ h2{
     font-size: 18px;
 }
 
+.photo{
+    position: relative;
+}
+
 .photo img{
     border-radius: 20px;
     filter: brightness(80%);
     height: 80%;
     object-fit: cover;
+    position: relative;
     width: 80%;
+}
+
+.photo p{
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.photo::after{
+    align-items: center;
+    background-color: #000;
+    border-radius: 20px;
+    content: var(--content);
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 80%;
+}
+
+.photo:hover::after{
+    opacity: 0.5;
 }
 
 .title-img{
